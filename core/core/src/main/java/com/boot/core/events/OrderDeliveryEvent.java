@@ -1,0 +1,20 @@
+package com.boot.core.events;
+
+import java.math.BigDecimal;
+
+import org.axonframework.modelling.command.TargetAggregateIdentifier;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class OrderDeliveryEvent {
+	
+
+	private String deliveryId;
+	private String orderId;
+	private String invoiceId;
+	
+
+}
